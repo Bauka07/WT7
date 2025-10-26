@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Assignment - All Tasks</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 jQuery Assignment - Complete Tasks</h1>
+
+        <!-- Part 1: Getting Started -->
+        <div class="task-section">
+            <h2>Part 1: Getting Started with jQuery</h2>
+            
+            <h3>Task 0: Setup & Console Test</h3>
+            <p>Open the browser console (F12) to see "jQuery is ready!" message.</p>
+            <div class="output" id="console-output"></div>
+
+            <h3>Task 1: Selectors & CSS</h3>
+            <div id="demo-id" class="demo-box">Element selected by ID</div>
+            <div class="demo-class demo-para">Element selected by CLASS</div>
+            <p class="demo-para">Element selected by TAG</p>
+            <button id="change-content">Change Content</button>
+            <button id="change-style">Change Style</button>
+        </div>
+
+        <!-- Part 2: jQuery Effects -->
+        <div class="task-section">
+            <h2>Part 2: jQuery Effects</h2>
+
+            <h3>Task 2: Visibility Methods</h3>
+            <p class="demo-para" id="visibility-para">This paragraph can be hidden or shown!</p>
+            <button id="hide-btn">Hide</button>
+            <button id="show-btn">Show</button>
+            <button id="toggle-btn">Toggle</button>
+
+            <h3>Task 3: Fade Methods</h3>
+            <img src="https://picsum.photos/200/150?random=1" alt="Demo" class="demo-image" id="fade-image">
+            <br>
+            <button id="fadeIn-btn">Fade In</button>
+            <button id="fadeOut-btn">Fade Out</button>
+            <button id="fadeToggle-btn">Fade Toggle</button>
+
+            <h3>Task 4: Slide Methods</h3>
+            <button id="slide-trigger">Toggle Panel</button>
+            <div class="collapsible-panel" id="slide-panel">
+                <h4>Collapsible Panel</h4>
+                <p>This panel slides up and down! You can add any content here. This demonstrates the slideToggle() method in jQuery.</p>
+            </div>
+        </div>
+
+        <!-- Part 3: DOM Manipulation -->
+        <div class="task-section">
+            <h2>Part 3: DOM Manipulation with jQuery</h2>
+
+            <h3>Task 5: Add & Remove Elements</h3>
+            <ul class="item-list" id="item-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+            <button id="add-item">Add Item</button>
+            <button id="prepend-item">Prepend Item</button>
+            <button id="remove-item">Remove Last Item</button>
+
+            <h3>Task 6: Modifying Attributes</h3>
+            <img src="https://picsum.photos/200/150?random=2" alt="Demo" class="demo-image" id="attr-image">
+            <br>
+            <button id="change-image">Change Image</button>
+            <a href="https://example.com" id="demo-link" target="_blank">Demo Link (example.com)</a>
+            <br>
+            <button id="change-link">Change Link to jQuery.com</button>
+
+            <h3>Task 7: Form Interaction</h3>
+            <div>
+                <input type="text" id="name-input" placeholder="Enter your name">
+                <input type="email" id="email-input" placeholder="Enter your email">
+            </div>
+            <div class="output" id="form-output">Your input will appear here...</div>
+        </div>
+
+        <!-- Part 4: Animations -->
+        <div class="task-section">
+            <h2>Part 4: Animations</h2>
+
+            <h3>Task 8: Basic Animation</h3>
+            <div class="animate-box" id="basic-box"></div>
+            <button id="animate-basic">Animate (Size & Position)</button>
+            <button id="reset-basic">Reset</button>
+
+            <h3>Task 9: Sequential Animations</h3>
+            <div class="animate-box" id="sequential-box"></div>
+            <button id="animate-sequential">Sequential Animation</button>
+
+            <h3>Task 10: Combined Animation</h3>
+            <div class="animate-box" id="combined-box"></div>
+            <button id="animate-combined">Combined Animation</button>
+        </div>
+
+        <!-- Part 5: Mini Projects -->
+        <div class="task-section">
+            <h2>Part 5: Mini Projects</h2>
+
+            <h3>Project 1: Image Gallery</h3>
+            <div class="gallery">
+                <img src="https://picsum.photos/150/100?random=10" class="thumbnail" alt="Gallery 1">
+                <img src="https://picsum.photos/150/100?random=11" class="thumbnail" alt="Gallery 2">
+                <img src="https://picsum.photos/150/100?random=12" class="thumbnail" alt="Gallery 3">
+                <img src="https://picsum.photos/150/100?random=13" class="thumbnail" alt="Gallery 4">
+            </div>
+            <div id="enlarged-container"></div>
+
+            <h3>Project 2: Accordion Menu</h3>
+            <div id="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">Section 1: Introduction to jQuery</div>
+                    <div class="accordion-content">
+                        <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, and animation much simpler.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Section 2: Selectors</div>
+                    <div class="accordion-content">
+                        <p>jQuery selectors allow you to select and manipulate HTML elements. You can select elements by id, class, type, attribute, and much more.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Section 3: Effects & Animations</div>
+                    <div class="accordion-content">
+                        <p>jQuery provides many methods for effects and animations including hide/show, fade, slide, and custom animations with the animate() method.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Project 3: Bouncing Ball</h3>
+            <div class="ball-container">
+                <div class="ball" id="bouncing-ball"></div>
+            </div>
+            <button id="start-bounce">Start Bouncing</button>
+            <button id="stop-bounce">Stop</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
